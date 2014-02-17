@@ -3,6 +3,8 @@ require_relative 'hamming'
 
 require 'coveralls'
 Coveralls.wear!
+require 'simplecov'
+SimpleCov.start
 
 class HammingTest < MiniTest::Unit::TestCase
   def test_no_difference_between_identical_strands
