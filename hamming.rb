@@ -1,6 +1,5 @@
 # encoding: UTF-8
 # Clase Hamming
-gem 'coveralls', require: false
 class Hamming
   def self.compute(str1, str2)
     return 0 if str1.length != str2.length
