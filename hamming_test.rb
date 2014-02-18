@@ -1,7 +1,3 @@
-require 'minitest/autorun'
-require_relative 'hamming'
-
-
 require 'simplecov'
 require 'coveralls'
 Coveralls.wear!
@@ -13,6 +9,11 @@ SimpleCov.formatter = Coveralls::SimpleCov::Formatter
 SimpleCov.start do
   add_filter 'app/secrets'
 end
+
+require 'minitest/autorun'
+require_relative 'hamming'
+
+
 
 class HammingTest < MiniTest::Unit::TestCase
   def test_no_difference_between_identical_strands
